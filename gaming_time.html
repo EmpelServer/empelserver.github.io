@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game Zhop</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body>
+<div id="container" class="full-height flex-wrapper">
+    <div id="header">
+        <div id="logo">
+            <a href="index.html" title="Gamewinkel">
+                <img src="graphics/winkel_logo.png" border="0" style="vertical-align:middle;height:100px;">
+            </a>
+            <a href="index.html" title="Gamewinkel">
+
+            </a>
+            <div id="logo-tekst">Voor de echte gamer</div>
+        </div>
+    </div>
+    <div id="nav">
+        <ul id="test">
+            <li>
+                <a href="index.html" title="Home">Startscherm</a>
+            </li>
+            <li>
+                <a href="upcoming_games.html" title="Upcoming Games">Aanstaande Games</a>
+            </li>
+            <li>
+                <a href="current_games.html" title="Current Games">Huidige Games</a>
+            </li>
+            <li>
+                <a href="gaming_time.html" title="Gaming Time">Gaming Time</a>
+            </li>
+            <li>
+                <a href="contact.html" title="Contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+    <div id="page">
+        <div id="content">
+            <div class="product-header">
+                <p>Wil jij je gamen even afwisselen met een frisse neus halen?
+                     Geen zorgen, wij hebben hier een handig weeroverzicht!</p>
+                <br>
+                <button id="knopGet" class="knopStyle" type="button">Geef mij het weer!</button>
+                <button id="knopLocatie" class="knopStyle" type="button">Waar ben ik?</button>
+                <div class="inputRij">
+                    <span class="inputKolom">Latitude</span>
+                    <span class="inputKolom">Longitude</span>
+                </div>
+                <div class="inputRij">
+                    <div class="inputGroep inputKolom">
+                        <input
+                            type="text"
+                            id="latitude"
+                            value="52.02"
+                        />
+                    </div>
+                    <div class="inputgroep inputKolom">
+                        <input
+                            type="text"
+                            id="longitude"
+                            value="4.49"
+                        />
+                    </div>
+                </div>
+            </div>
+            <!-- <div>
+                <button id="vandaag" class="dayButtons" type="button">Vandaag</button>
+                <button id="morgen" class="dayButtons" type="button">Morgen</button>
+                <button id="overmorgen" class="dayButtons" type="button">Overmorgen</button>
+            </div> -->
+            <div class="weerbericht">
+                <div class="vervangDiv">
+                    <p>Deze zinnen zullen veranderen naar het weerbericht.<br><br>Het is net magie!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="spacefill" style="flex-grow:1"></div>
+    <div id="footer">
+        <div id="footer-container">
+            <p>Deze site is in elkaar gezet door één persoon als voorbeeld voor zijn opleiding.</p>
+            <p>Je kunt de ontwerper bereiken op het e-mail adres: <a href="mailto: 97073998@st.deltion.nl" style="color:#0000EE">97073998@st.deltion.nl</a></p>
+        </div>
+    </div>
+</div>
+<script src="js/apiweather.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,303 @@
+/* Standard */
+html {
+    overflow: auto;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    background-color: #aebbbe;
+    font-family: Helvetica, Arial, 'Times New Roman', sans-serif;
+    font-size: 14px;
+    height: 100vh;
+    width: 100%;
+    /* min-width: 1000px; */
+    min-height: -webkit-fill-available;
+    margin: 0px;
+    line-height: 18px;
+    margin-left: auto;
+    margin-right: auto;
+}
+a {
+    color: inherit;
+}
+ul {
+    list-style-type: none;
+}
+td {
+    vertical-align: top;
+}
+button {
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    border-radius: 0.25rem;
+}
+
+button:hover {
+    background-color: salmon;
+}
+
+button.selected {
+    background-color: saddlebrown;
+}
+
+/* Classes */
+.full-height {
+    height: 100%;
+}
+.flex-wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.product-header {
+    font-size: 18px;
+}
+.inputRij {
+    display: flex;
+    columns: 2;
+}
+.inputKolom {
+    width: 50%;
+    justify-content: space-between;
+}
+input {
+    width: 25%;
+}
+.knopStyle {
+    margin: 0px;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.dayButtons {
+    margin: 10px 0px;
+}
+.weerbericht {
+    display: flex;
+}
+.main-text {
+    /* width: 500px; */
+    margin: auto;
+    width: 40%;
+    max-width: 500px;
+}
+.col {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    flex: 1 0 0%;
+    max-width: 33%;
+    float: left;
+}
+.gameInfoDiv {
+    background-color: inherit;
+    position: absolute;
+}
+.gameInfo {
+    position: absolute;
+    width: 900px;
+    height: 400px;
+    background-color: inherit;
+
+}
+.leftImg {
+    float: left;
+}
+.rightGameInfo {
+    float: left;
+    padding-left: 50px;
+    max-width: 450px;
+}
+.gameTitle {
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 20px;
+}
+.gameImage {
+    width: 400px;
+    height: 400px;
+}
+.game1 {
+    z-index: 1;
+}
+.game2 {
+    z-index: 1;
+}
+.game3 {
+    z-index: 1;
+}
+.active {
+    z-index: 2;
+    /* animation:foo 2s ease 1; */
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    border: 1px solid rgba(0,0,0,.125);
+}
+.card-img-top {
+    width: 50%;
+    height: auto;
+}
+/* Id's */
+#header {
+    background-color: #f7f7f7;
+    width: 100%;
+    height: 105px;
+    font-size:18px;
+}
+#logo-tekst {
+    position: relative;
+    top: -40px;
+    left: 110px;
+    margin-right: 110px;
+}
+#container {
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 1000px; */
+    width: 100%;
+    border-left: 1px solid #c0c0c0;
+    border-right: 1px solid #c0c0c0;
+    background: #f7f7f7;
+}
+#nav {
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 950px; */
+    width: 100%;
+    color: #ffffff;
+    padding-top: 0px;
+    border-color: #000000;
+    background-color: #28a1c5;
+    display: block;
+    border-radius: 5px;
+}
+#nav ul {
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 950px; */
+    list-style: none;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    height: 25px;
+    padding: 1px;
+    /* padding-top: 5px; */
+}
+#nav li {
+    overflow: hidden;
+    display: block;
+    float: left;
+    border-right: 1px solid #000000;
+    /* border: 1px solid #000000; */
+    height: 25px;
+}
+#nav li a {
+    padding: 16px;
+    text-decoration: none;
+    line-height: 25px;
+}
+#nav li a:hover {
+    background-color: #1c81a0;
+}
+#page {
+    float: left;
+    /* height: 100%;
+    margin-bottom: 56px; */
+}
+#page:after {
+    content: "";
+    display: block;
+}
+#welkomTitel {
+    font-size: 24px;
+    padding-top: 15%;
+    text-align: center;
+}
+#content {
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 950px; */
+    padding-left: 20px;
+    /* padding-top: 20px; */
+    background-color: #f7f7f7;
+}
+#footer {
+    color: #A0A0A0;
+    background: #F0F0F0;
+    width: 100%;
+    border-top: solid #A0A0A0 1px;
+    border-bottom: solid #A0A0A0 1px;
+    padding-top: 10px;
+    /* overflow: hidden; */
+    padding-bottom: 10px;
+    bottom: 0px;
+    /* position: fixed; */
+}
+#footer-container {
+    color:#A0A0A0;
+}
+#footer p {
+    margin: 0px;
+    text-align: center;
+    /* position: absolute; */
+}
+/* Media */
+@media only screen and (max-width: 600px) {
+    /* For phone */
+    body {
+        width: device-width;
+    }
+    nav {
+        width: device-width;
+    }
+    nav ul {
+        width: device-width;
+    }
+    input {
+        width: 38%;
+    }
+    /* Classes for Phones*/
+    .main-text {
+        width: 40%;
+    }
+    .gamebox {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+    .gameButton {
+        /* margin-right: auto; */
+        margin-top: 10px;
+    }
+    .gameInfo {
+        position: absolute;
+        width: 350px;
+        /* height: 800px; */
+        background-color: inherit;
+    }
+    .leftImg {
+        /* width: 100px; */
+        /* display: none; */
+    }
+    .rightGameInfo {
+        padding-left: 10px;
+        display: inline-block;
+        max-width: 250px;
+    }
+    .gameImage {
+        width: 100px;
+        height: 200px;
+    }
+    .imgMobile {
+        display: block;
+        width: auto;
+        height: auto;
+    }
+}
+
